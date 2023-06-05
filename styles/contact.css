@@ -1,0 +1,261 @@
+
+   main {
+      width:100%;
+      height:auto;
+      margin-top: 7rem;
+      position: relative;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important;
+    }
+
+ /* estandarizacion*/
+ * {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important;
+
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+body { 
+  width: 100%;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+  margin:0;
+  padding:0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+header {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+  footer{ background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important; }
+  
+  /* preguntar footer*/
+  
+
+  a {
+    text-decoration: none;
+    color: rgb(161, 167, 111) !important; }
+    
+li {
+  font-size: 24px !important;
+  font-weight: 300 !important;
+}
+p {
+  font-size: 140%;
+  line-height: 150%;
+  
+}  
+
+
+
+/*barra de navegacion*/
+.navbar-container{
+  
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: #1e1f26;
+    z-index: 10;
+  }
+    .nav-link {
+      position: relative;
+      
+    }
+    
+    .line {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #03dac6;
+      transform: scaleX(0);
+      transition: transform 0.5s ease;
+    }
+    
+    .nav-link:hover .line,
+    .nav-link:focus .line {
+      transform: scaleX(1);
+    }
+    
+    .container {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 40px;
+  }
+
+/* ===== DEMO ===== */
+.pen-info {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.pen-info__title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    letter-spacing: 1.8px;
+    margin: 0;
+    
+}
+
+.pen-info__p {
+    font-size: 17px;
+}
+
+
+.demo {
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;  
+    position: relative;
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: rgba(67, 71, 31, 0.842) !important; 
+
+}
+
+.demo__div {
+
+    -webkit-box-shadow: -1px 9px 18px -5px #03dac6;
+    -moz-box-shadow: -1px 9px 18px -5px #03dac6;
+    box-shadow: -1px 9px 18px -5px #03dac6;   
+}
+
+
+/* ===== MAIN CODE ===== */
+.people {
+    flex: 10 0 0;
+    min-width: 250px;
+    height: 300px;
+    margin: 20px 20px 0;
+    background-color: #1e1f26;
+    position: relative;
+    backface-visibility: hidden;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.people__img {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transform-origin: center;
+    transition: all 0.4s;
+}
+
+
+.people:hover .people__img {
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.people:nth-of-type(1) .people__img {
+    object-position: top center;
+    background-color: #fff;
+}
+
+
+.people__div--name {
+    background-color: rgba(10, 241, 222, 0.493);    
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    max-width: 400px;
+    line-height: 1.5;
+    padding: 0 20px;
+    transition: all 0.4s;
+}
+
+
+.people:hover .people__div--name {
+    left: -130%;
+}
+
+.people-name {
+    letter-spacing: 1.1px;
+}
+
+.people__div--info {
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    background-color: rgba(240, 230, 220, 0.575);
+    transition: all 0.4s;
+}
+
+.people:hover .people__div--info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.people__name {
+    margin: 10px 0;
+    letter-spacing: 1.1px;
+}
+
+.people__desc {
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .people {
+        flex: 0 0 48%;
+    }
+}
+
+@media only screen and (max-width: 767px) { 
+    body {
+        padding: 50px 20px;
+    }
+
+    .people {
+        flex: 0 0 100%;
+        min-width: unset;
+        max-width: 400px;
+        margin: 25px auto 0;
+    }
+}
+
+
+  

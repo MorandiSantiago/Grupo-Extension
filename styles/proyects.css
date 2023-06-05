@@ -3,37 +3,41 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  
 
 }
-  main {
-    width:100%;
-    height:auto;
-    position: relative;
-  }
-  html {  
-    height: 100%;
-    
-  }
+
+body{
+background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important;
+
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   
-  
+}
+body { 
+  width: 100%;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+  margin:0;
+  padding:0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+header {
+  margin-left: 0;
+  margin-right: 0;
+}
+
   footer{ background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important; }
   
   /* preguntar footer*/
   
-  body { 
-    margin:0;
-    padding:0;
-   
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: "Lato", sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
-  header {
-    margin-left: 0;
-    margin-right: 0;
-  }
+
   a {
     text-decoration: none;
     color: rgb(161, 167, 111) !important; }
@@ -42,7 +46,11 @@ li {
   font-size: 24px !important;
   font-weight: 300 !important;
 }
-    
+p {
+  font-size: 140%;
+  line-height: 150%;
+  
+}  
   /*fondo */
   .pa { 
     background-attachment: fixed;
@@ -56,11 +64,14 @@ li {
     position:relative;    
   }
   .pa.bgA {
-    background-image: url("https://wallpaperset.com/w/full/5/7/2/227414.jpg");
+    background-image: url("../styles/img/WhatsApp\ Image\ 2023-05-30\ at\ 5.32.27\ PM.jpeg");
+
+
+
   }
   
   .pa.bgB {
-    background-image: url("https://wallpaperset.com/w/full/4/d/6/227453.jpg");
+    background-image: url("https://wallpaperset.com/w/full/5/7/2/227414.jpg");
   }
   
   .pa.bgC {
@@ -215,6 +226,9 @@ img.project-image:last-of-type{
   position: absolute;
   left: 40px;
 }
+
+
+
 
 
 

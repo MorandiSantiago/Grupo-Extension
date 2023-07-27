@@ -1,170 +1,603 @@
  /* estandarizacion*/
  * {
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
     
- 
-  }
- body{
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%) !important;
-  
- }
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    width: 100%;
-    overflow-x: hidden; /* Evita el scroll horizontal */
-    font-family: "Lato", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    min-height: 100vh;
-  }
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
 
- 
-  header {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  p {
-    font-size: 140%;
-    line-height: 150%;
-    
-  }
-  
-  a {
-    text-decoration: none;
-    color: rgb(161, 167, 111) !important; 
+}
 
-  }
-  li{
-    font-size: 24px;
-    font-weight: 300;
-    
-  }
-  /* about*/
+
+body {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+ background-repeat: no-repeat;
+ background-attachment: fixed; 
+}
+  
+
+html, body {
+  height: 100%;
+
+  
+}
+body {
+  width: 100%;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+
+header {
+  margin-left: 0;
+  margin-right: 0;
+}
+p {
+  font-size: 140%;
+  line-height: 150%;
+  
+}
+
+a {
+  text-decoration: none !important;
+  color: rgb(161, 167, 111) !important; 
+
+}
+li{
+  font-size: 24px;
+  font-weight: 300;
+  
+}
+/* about*/
 .section-about {
+
+  padding: 80px 0;
+  margin-bottom: 0px !important;
+  padding-bottom: 100px;
+  padding-top: 100px;
+
   
-    padding: 80px 0;
-    margin-bottom: 0px !important;
-    padding-top: 130px;
-    padding-bottom: 80px;
-    margin-bottom: 80px !important;
-    
-  }
+}
+.map{
+  width: 600px;
+ height: 350px;
+}
+.about-content {
+  margin-left: 50px;
+}
+
+.about-image img {
+  max-width: 100% !important;
+  max-height: 360px !important;
+  object-fit: contain !important;
+  object-position: top !important;
+  margin-right: 50px;
+   height: auto;
+}
+
+.about-image {
+   margin: 0;
+  padding: 0;
+  z-index: -1 !important;
+  border-radius: 250px !important;
+ 
+}
+
+.section-title {
+  font-size: 100px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: #03dac6;
+}
+
+.about-text, .about-text1 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #03dac6;
+}
+
+.about-btn{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 25px;
+  border-radius: 25px;
+  background-color: #000;
+  color: #fff;
+  transition: 0.5s !important;
+  box-shadow: 0px 4px 6px #03dac6;
   
-  .about-content {
-    margin-top: 30px;
-    margin-left: 50px;
-  }
+}
+
+.about-btn:hover, #mostrar-informacion:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+  opacity: 70% !important;
+  box-shadow: 0px 8px 12px #03dac6;
+  transform: translateY(-7px) !important;
+}
+
+.boton-conocenos{
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* Agregamos media queries para ajustar estilos en diferentes tamaños de pantalla */
+@media (max-width: 767px) {
+.section-about {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#mostrar-informacion {
+  margin-left: 110px !important;
+  margin: 20px;
+}
+.map{
+  width:100%;
+  height:300px; 
+}
+.about-image {
+  margin-top: 20px;
+  width:100%;
+  height:100%; 
+}
+.about-content {
+  margin-left: 0;
+}
+
+
+}
+
+/* Hacemos que el botón se ajuste en pantallas más pequeñas */
+.about-btn, #mostrar-informacion {
+display: inline-block;
+font-size: 16px;
+font-weight: 500;
+padding: 12px 25px;
+border-radius: 25px;
+background-color: #000;
+color: #fff;
+transition: 0.5s !important;
+box-shadow: 0px 4px 6px #03dac6;
+}
+
+/* Agregamos un margen superior para el botón en pantallas pequeñas */
+@media (max-width: 991px) {
+#mostrar-informacion {
+  margin-top: 20px;
+}
+}
+
+/* Hacemos que el título se ajuste en pantallas más pequeñas */
+@media (max-width: 575px) {
+.section-title{
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#proyectos{
+  margin-top: -15rem;
+  margin-bottom: 13rem;
+}
+.lead{
+font-size: small !important;
+}
+.map{
+  height: 100% !important;
+  width: 100% !important;
+}
+.about-text1{
+  font-size: 15px !important;
+  margin-left: 150px;
+}
+.about-text{
+  font-size: 20px !important;
   
-  .about-image img {
-    max-width: 100% !important;
-    max-height: 360px !important;
-    object-fit: contain !important;
-    object-position: top !important;
-    margin-right: 50px;
-     height: auto;
-  }
   
-  .about-image {
-     margin: 0;
-    padding: 0;
-    z-index: -1 !important;
-    border-radius: 250px !important;
-   
-  }
-  
-  .section-title {
-    font-size: 100px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    color: #03dac6;
-  }
-  
-  .about-text {
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 30px;
-    color: #03dac6;
-    
-  }
-  
-  .about-btn {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 25px;
-    border-radius: 25px;
-    background-color: #000;
-    color: #fff;
-    transition: 0.5s !important;
-    box-shadow: 0px 4px 6px #03dac6;
-  }
-  
-  .about-btn:hover {
-    background-color: #5a5757 !important;
-    box-shadow: 0px 8px 12px #03dac6;
-    transform: translateY(-7px) !important;
-  }
-  
-  
-  
-  
+}
+
+.about-image {
+  margin-top: 20px;
+  height: 100% !important;
+  width: 100% !important;
+}
+.navbar{
+width: 100%;
+}
+#contenido{
+ padding-left: 1rem !important;
+ padding-right: 1rem !important;
+}
+#mostrar-informacion{
+  margin-left: 0px !important;
+  margin: 20px;
+ 
+}
+#header1{
+  margin-top: 2rem;
+  height: 30rem !important;
+  width: 100% !important;
+  align-items: center !important;
+}
+
+.nav {
+justify-content: flex-end!important;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-content: flex-start;
+align-items: center;
+}
+
+
+.social-icon {
+
+width: 60px !important;
+height: 60px !important;
+
+
+}
+
+}
 
 
 /*efecto barra de navegacion*/
 
-.navbar-container{
+.nav-link {
+  position: relative;
   
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 75px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  background: #1e1f26;
-  z-index: 10;
-}
-  .nav-link {
-    position: relative;
-    
-  }
-  
-  .line {
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #03dac6;
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
-  }
-  
-  .nav-link:hover .line,
-  .nav-link:focus .line {
-    transform: scaleX(1);
-  }
-  
-  .container {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
+.line {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #03dac6;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.nav-link:hover .line,
+.nav-link:focus .line {
+  transform: scaleX(1);
 }
 
 .logo {
-  position: absolute;
-  left: 40px;
+position: absolute;
+left: 0.5px;
 }
+
+/* ===== DEMO ===== */
+.pen-info {
+flex: 0 0 100%;
+text-align: center;
+}
+
+.pen-info__title {
+font-family: 'Abril Fatface', cursive;
+font-size: 30px;
+letter-spacing: 1.8px;
+margin: 0;
+
+}
+
+.pen-info__p {
+font-size: 17px;
+}
+
+
+.demo { 
+position: relative;
+display: flex; 
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+color: rgba(67, 71, 31, 0.842) !important; 
+
+}
+
+.demo__div {
+
+-webkit-box-shadow: -1px 9px 18px -5px #03dac6;
+-moz-box-shadow: -1px 9px 18px -5px #03dac6;
+box-shadow: -1px 9px 18px -5px #03dac6;   
+}
+
+
+/* ===== MAIN CODE ===== */
+.people {
+flex: 10 0 0;
+min-width: 250px;
+height: 250px;
+margin: 20px 20px 0;
+background-color: #1e1f26;
+position: relative;
+backface-visibility: hidden;
+overflow: hidden;
+backface-visibility: hidden;
+}
+
+.people__img {
+width: 100%;
+height: 500px;
+margin: 0 auto;
+display: block;
+object-fit: cover;
+object-position: center;
+transform-origin: center;
+transition: all 0.4s;
+}
+
+
+.people:hover .people__img {
+margin-top: 20px;
+height: 200px;
+width: 200px;
+border-radius: 50%;
+}
+
+.people:nth-of-type(1) .people__img {
+object-position: top center;
+background-color: #fff;
+}
+
+
+.people__div--name {
+background-color: rgba(10, 241, 222, 0.493);    
+position: absolute;
+bottom: 0%;
+left: 0;
+width: 100%;
+max-width: 400px;
+line-height: 1.5;
+padding: 0 20px;
+transition: all 0.4s;
+}
+
+
+.people:hover .people__div--name {
+left: -130%;
+}
+
+.people-name {
+letter-spacing: 1.1px;
+}
+
+.people__div--info {
+position: absolute;
+bottom: 0;
+height: 40%;
+padding: 20px;
+opacity: 0;
+visibility: hidden;
+overflow-y: auto;
+background-color: rgba(240, 230, 220, 0.575);
+transition: all 0.4s;
+}
+
+.people:hover .people__div--info {
+opacity: 1;
+visibility: visible;
+}
+
+.people__name {
+margin: 10px 0;
+letter-spacing: 1.1px;
+}
+
+.people__desc {
+line-height: 1.5;
+margin: 0 0 20px;
+  text-align: justify;
+}
+
+/*adentro del boton*/
+#contenido {
+padding-bottom: 4rem;
+padding-top: 3rem;
+padding-left: 7rem;
+padding-right: 7rem;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+color: rgba(67, 71, 31, 0.842) !important;
+
+}
+.hide-info {
+display: none;
+}
+
+.toggle-button {
+position: absolute;
+top: 0;
+right: 0;
+
+}
+.demo {
+margin-top: 60px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+.people {
+    flex: 0 0 48%;
+}
+}
+
+@media only screen and (max-width: 767px) { 
+body {
+    padding: 50px 20px;
+}
+
+.people {
+    flex: 0 0 100%;
+    min-width: unset;
+    max-width: 400px;
+    margin: 25px auto 0;
+    height: 200px
+}
+}
+
+#header1{
+background-image: url("../styles/img/WhatsApp\ Image\ 2023-06-05\ at\ 12.06.02\ PM.jpeg");
+opacity: 85%;
+background-size: cover;
+background-position: center;
+height: 37rem;
+object-fit: cover;
+color: rgb(31, 128, 47);
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+justify-content: center;
+}
+.lead{
+color: #000;
+font-weight:bolder !important;
+text-align: justify;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+
+
+/*cuadro de texto*/
+.title {
+width: 70% !important;
+border-radius: 10px;
+background: rgba(241, 241, 241, 0.582);
+box-shadow: 0 0 8px #03dac6;
+
+
+}
+
+/* Agregamos estilos para centrar las palabras del navegador y colocar el logo a la izquierda */
+
+/* Estilo para el contenedor del logo y las palabras del navegador */
+
+
+/* Estilo opcional para separar los enlaces del navegador */
+.navbar-nav{
+display: flex !important;
+justify-content: center !important;
+align-items: center !important;
+}
+
+
+.social-icons {
+display: flex;
+}
+
+.social-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+width: 80px;
+height: 80px;
+margin: 0 0.5rem;
+border-radius: 80%;
+cursor: pointer;
+font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+font-size: 2.5rem;
+text-decoration: none;
+
+}
+.social-icon:hover{
+color: #fff !important;
+transition: transform 0.5s  !important;
+box-shadow: 0px 8px 12px #03dac6 !important;
+}
+
+.social-icon:active {
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.social-icon--linkedin {
+background: #006599;
+}
+.social-icon--linkedin .tooltip {
+background: #006599;
+color: currentColor;
+}
+.social-icon--linkedin .tooltip:after {
+border-top-color: #006599;
+}
+.social-icon--twitter {
+background: #2b97f1;
+
+}
+.social-icon--twitter .tooltip {
+background: #2b97f1;
+color: currentColor;
+}
+.social-icon--twitter .tooltip:after {
+border-top-color: #2b97f1;
+}
+
+.social-icon--facebook {
+background: #3b5a9b;
+
+}
+.social-icon--facebook .tooltip {
+background: #3b5a9b;
+color: currentColor;
+}
+.social-icon--facebook .tooltip:after {
+border-top-color: #3b5a9b;
+}
+.social-icon--instagram {
+background: #527fa6;
+}
+.social-icon--instagram .tooltip {
+background: #527fa6;
+color: currentColor;
+}
+.social-icon--instagram .tooltip:after {
+border-top-color: #527fa6;
+}
+
+.social-icon i {
+position: relative;
+top: 1px;
+}
+
+
+
+#mail{
+margin-right: 150px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+}
+
+#mail:hover{
+color: #fff !important;
+transition: transform 0.5s  !important;
+}
+
+.nav-item1:hover{
+font-style: oblique;
+transform: translateY(-2px) !important;
+}
+
 
 
 

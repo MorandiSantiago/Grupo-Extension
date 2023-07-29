@@ -10,11 +10,12 @@
 
 
 body {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #0e0f0e 100%);
+  background: radial-gradient(circle at bottom, #4e4e4e 1%,  #1f1f1f 50%,  #0e0f0e 90%);
  background-repeat: no-repeat;
  background-attachment: fixed; 
 }
-  
+
+
 
 html, body {
   height: 100%;
@@ -427,6 +428,11 @@ display: none;
 position: absolute;
 top: 0;
 right: 0;
+
+
+}
+button.navbar-toggler {
+  background-color: #03dac6 !important;
 
 }
 .demo {

@@ -9,7 +9,7 @@
 }
 
 body{
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #0e0f0e 100%);
+  background: radial-gradient(circle at bottom, #4e4e4e 1%,  #1f1f1f 50%,  #0e0f0e 90%);
   background-repeat: no-repeat;
   background-attachment: fixed; 
 }
@@ -271,12 +271,12 @@ padding-right: 15px;
   justify-content: center;
   position: relative;
   width: 30px;
-  height: 30px;
-  margin: 0 0.5rem;
+  height: 35px;
+  margin: 0 0.3rem;
   border-radius: 80%;
   cursor: pointer;
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-decoration: none;
  
 }
@@ -297,3 +297,8 @@ padding-right: 15px;
   top: 1px;
 }
 
+
+button.navbar-toggler {
+  background-color: #03dac6 !important;
+
+}

@@ -10,7 +10,7 @@
 
 
 body {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #0e0f0e 100%);
  background-repeat: no-repeat;
  background-attachment: fixed; 
 }
@@ -278,7 +278,7 @@ height: 60px !important;
 
 .logo {
 position: absolute;
-left: 0.5px;
+
 }
 
 /* ===== DEMO ===== */
@@ -455,7 +455,7 @@ body {
 }
 
 #header1{
-background-image: url("../styles/img/WhatsApp\ Image\ 2023-06-05\ at\ 12.06.02\ PM.jpeg");
+background-image: url("../styles/img/caracteristicas-del-trabajo-en-equipo\ \(1\).png");
 opacity: 85%;
 background-size: cover;
 background-position: center;
@@ -487,12 +487,8 @@ box-shadow: 0 0 8px #03dac6;
 
 }
 
-/* Agregamos estilos para centrar las palabras del navegador y colocar el logo a la izquierda */
 
-/* Estilo para el contenedor del logo y las palabras del navegador */
-
-
-/* Estilo opcional para separar los enlaces del navegador */
+/* Estilo  para separar los enlaces del navegador */
 .navbar-nav{
 display: flex !important;
 justify-content: center !important;
